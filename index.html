@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrisland CS · Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/cu-logo.png" alt="Chrisland Logo" class="logo-img">
+          <span>Chrisland</span> University
+        </a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="handbook.html">Handbook</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Empowering Future Tech Leaders</h1>
+      <p>Join the Department of Computer Science at Chrisland University. Shaping innovative minds for the global digital economy.</p>
+      <div class="hero-buttons">
+        <a href="handbook.html" class="btn btn-primary">Explore Handbook <i class="fas fa-arrow-right"></i></a>
+        <a href="faculty.html" class="btn btn-outline">View Faculty</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Access Cards -->
+  <section class="quick-access">
+    <div class="container">
+      <h2>Quick Access</h2>
+      <div class="card-grid">
+        <div class="card clickable" onclick="location.href='handbook.html';">
+          <i class="fas fa-book-open"></i>
+          <h3>Student Handbook</h3>
+          <p>Rules, regulations, and departmental guidelines for the current session.</p>
+        </div>
+        <div class="card clickable" onclick="alert('Academic Calendar: Spring semester starts Jan 15, Fall semester starts Sep 1.')">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Academic Calendar</h3>
+          <p>Stay updated with registration dates, lectures, and examination periods.</p>
+        </div>
+        <div class="card clickable" onclick="location.href='courses.html';">
+          <i class="fas fa-layer-group"></i>
+          <h3>Course Modules</h3>
+          <p>Access your 100L - 400L course materials and curriculum details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portal Announcements (Extended) -->
+  <section class="portal-announcements">
+    <div class="container">
+      <h2>📢 Chrisland Portal Updates</h2>
+      <div class="announcement-grid">
+        <div class="announcement-card">
+          <i class="fas fa-bullhorn"></i>
+          <h4>Registration for 2025/2026 Opens</h4>
+          <p>Online registration begins June 1st. Ensure you clear all fees.</p>
+          <small>Posted: 2 days ago</small>
+        </div>
+        <div class="announcement-card">
+          <i class="fas fa-calendar-check"></i>
+          <h4>SIWES Briefing</h4>
+          <p>300-level students: Mandatory SIWES orientation on May 20th at 10am in LT2.</p>
+          <small>Posted: 5 days ago</small>
+        </div>
+        <div class="announcement-card">
+          <i class="fas fa-laptop"></i>
+          <h4>New Electives</h4>
+          <p>Check the portal for newly added electives in AI and Cybersecurity.</p>
+          <small>Posted: 1 week ago</small>
+        </div>
+        <div class="announcement-card">
+          <i class="fas fa-trophy"></i>
+          <h4>Hackathon 2025</h4>
+          <p>Register your team by May 30. Prizes for top 3 projects.</p>
+          <small>Posted: 3 days ago</small>
+        </div>
+        <div class="announcement-card">
+          <i class="fas fa-book"></i>
+          <h4>Library Hours Extended</h4>
+          <p>The university library will now be open until 10pm during exams.</p>
+          <small>Posted: 2 weeks ago</small>
+        </div>
+        <div class="announcement-card">
+          <i class="fas fa-users"></i>
+          <h4>CS Week Celebrations</h4>
+          <p>Join us for tech talks, workshops, and networking June 10-14.</p>
+          <small>Posted: 4 days ago</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Department at a Glance (Stats) -->
+  <section class="stats">
+    <div class="container">
+      <h2>Department at a Glance</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fas fa-users"></i>
+          <h3>200+</h3>
+          <p>Current Students</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>20+</h3>
+          <p>Faculty Members</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>98%</h3>
+          <p>Graduate Employment Rate</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-flask"></i>
+          <h3>10+</h3>
+          <p>Research Labs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Students Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <img src="Images/joseph lab.jpeg" alt="Student" class="pic1">
+          <p>"The Computer science department equipped me with the skills needed to secure a role at a leading technology company."</p>
+          <h4>— Joseph Olawoyin, Class of 2024</h4>
+        </div>
+        <div class="testimonial-card">
+          <img src="Images/prince.jpeg" alt="Student" class="pic1">
+          <p>"Fantastic lecturers and hands-on projects. I loved every moment."</p>
+          <h4>— Prince Nweze, 400L</h4>
+        </div>
+        <div class="testimonial-card">
+          <img src="Images/leye 3.jpeg" alt="Student" class="pic1">
+          <p>"The cybersecurity lab provided hands-on experience relevant to real-world computer science problems"</p>
+          <h4>— Kayode Olaleye, 300L</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section class="events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <ul class="event-list">
+        <li><i class="fas fa-calendar"></i> May 20: SIWES Orientation</li>
+        <li><i class="fas fa-calendar"></i> May 25: Guest Lecture on AI Ethics</li>
+        <li><i class="fas fa-calendar"></i> June 1: Course Registration Begins</li>
+        <li><i class="fas fa-calendar"></i> June 10-14: CS Week</li>
+        <li><i class="fas fa-calendar"></i> June 20: Hackathon Deadline</li>
+        <li><i class="fas fa-calendar"></i> July 1: Semester Examinations Start</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="https://via.placeholder.com/40x40/2c1a4a/ffffff?text=CU" alt="">
+        <span>Chrisland University Computer Science</span>
+      </div>
+      <p>Km 5, Ajebo Road, Abeokuta, Ogun State, Nigeria.</p>
+      <p>© 2025 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

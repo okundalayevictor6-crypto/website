@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrisland CS · Handbook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+   <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/cu-logo.png" alt="Chrisland Logo" class="logo-img">
+          <span>Chrisland</span> University
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="handbook.html" class="active">Handbook</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="handbook">
+    <div class="container">
+      <h2>CS Handbook <span class="highlight">Chrisland University</span></h2>
+      <p class="section-intro">Complete guide to academic policies, regulations, and student life.</p>
+
+      <div class="handbook-grid">
+        <!-- Vision & Mission -->
+        <div class="handbook-card">
+          <h3><i class="fas fa-eye"></i> Our Vision</h3>
+          <p>To be the leading Department in Research and Teaching towards the economic and developmental growth of the nation through ICT.</p>
+          <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+          <ul class="icon-list">
+            <li><i class="fas fa-cog"></i> Stimulate sustained interest and enthusiasm in computer science.</li>
+            <li><i class="fas fa-brain"></i> Train students with necessary computing knowledge and skills for effective service.</li>
+            <li><i class="fas fa-graduation-cap"></i> Provide solid background for postgraduate studies and research.</li>
+            <li><i class="fas fa-flask"></i> Conduct research to advance computer science and integrate into other disciplines.</li>
+          </ul>
+          <a href="#" id="readMoreVision" class="read-more">Read more about our philosophy <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <!-- Admission & Grading -->
+        <div class="handbook-card">
+          <h3><i class="fas fa-door-open"></i> Admission Requirements</h3>
+          <ul class="reg-list">
+            <li><strong>O' Level:</strong> Five credits including English, Mathematics, Physics, Chemistry + any other science.</li>
+            <li><strong>UTME Subjects:</strong> English, Mathematics, Physics, and one of Chemistry/Biology.</li>
+            <li><strong>Direct Entry:</strong> ND/NCE in relevant fields with O' Level requirements.</li>
+          </ul>
+          <h3><i class="fas fa-chart-line"></i> Grading System</h3>
+          <ul class="reg-list">
+            <li>70-100% = A (5 pts) - First Class</li>
+            <li>60-69% = B (4 pts) - Second Class Upper</li>
+            <li>50-59% = C (3 pts) - Second Class Lower</li>
+            <li>45-49% = D (2 pts) - Third Class</li>
+            <li>40-44% = E (1 pt) - Pass</li>
+            <li>Below 40% = F (0 pts) - Fail</li>
+          </ul>
+        </div>
+
+        <!-- Regulations & Dress Code -->
+        <div class="handbook-card">
+          <h3><i class="fas fa-gavel"></i> Key Regulations</h3>
+          <ul class="reg-list">
+            <li>Minimum workload: 15 units, maximum: 24 units per semester.</li>
+            <li>GPA < 1.50 leads to probation; CGPA < 1.50 for two consecutive semesters → withdrawal.</li>
+            <li>75% lecture attendance mandatory to sit for exams.</li>
+          </ul>
+          <h3><i class="fas fa-tshirt"></i> Dress Code</h3>
+          <p><strong>Female:</strong> Skirt below knees, no transparent/ tight clothes, no excessive makeup, moderate jewellery, hair well-groomed. Tattoos prohibited.</p>
+          <p><strong>Male:</strong> Trousers (not jeans), shirt and tie, no earrings/necklaces, hair short, clean-shaven.</p>
+        </div>
+      </div>
+
+      <!-- Additional Handbook Sections -->
+      <div class="handbook-extras">
+        <div class="handbook-card">
+          <h3><i class="fas fa-hospital"></i> Health Services</h3>
+          <ul class="reg-list">
+            <li>All students must register with the University Health Centre.</li>
+            <li>Medical reports from outside must be endorsed by the Director.</li>
+            <li>In case of illness during exams, report immediately to the Dean.</li>
+          </ul>
+        </div>
+        <div class="handbook-card">
+          <h3><i class="fas fa-book"></i> Library Rules</h3>
+          <ul class="reg-list">
+            <li>Silence must be observed; phones on silent.</li>
+            <li>Books must be checked out; no removal without authorization.</li>
+            <li>Bags inspected on exit.</li>
+            <li>Library ID card required for entry.</li>
+          </ul>
+        </div>
+        <div class="handbook-card">
+          <h3><i class="fas fa-calendar-alt"></i> Academic Calendar 2025/2026</h3>
+          <ul class="reg-list">
+            <li>First Semester: Sept 15 – Dec 20</li>
+            <li>Exams: Dec 5 – Dec 20</li>
+            <li>Second Semester: Jan 15 – April 30</li>
+            <li>Exams: April 20 – April 30</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Examination Misconduct Dropdown (Full Table) -->
+      <div class="misconduct-dropdown">
+        <button id="misconductToggle" class="dropdown-toggle">
+          <i class="fas fa-gavel"></i> Examination Misconduct: Offences and Sanctions
+          <i class="fas fa-chevron-down toggle-icon"></i>
+        </button>
+        <div id="misconductContent" class="dropdown-content">
+          <div class="table-responsive">
+            <table>
+              <thead><tr><th>S/N</th><th>Offence</th><th>Punishment (Maximum)</th></tr></thead>
+              <tbody>
+                <tr><td>i</td><td>Non-display of ID card</td><td>Reprimand/Suspension</td></tr>
+                <tr><td>ii</td><td>Noise making during an examination</td><td>Strong reprimand/Suspension</td></tr>
+                <tr><td>iii</td><td>Refusal to submit oneself for search</td><td>Rustication for one Semester</td></tr>
+                <tr><td>iv</td><td>Use of scrap papers with written notes</td><td>Rustication/Expulsion</td></tr>
+                <tr><td>v</td><td>Irregular possession of University Answer sheets</td><td>Expulsion</td></tr>
+                <tr><td>vi</td><td>Mutilation or removal of any paper</td><td>Expulsion</td></tr>
+                <tr><td>vii</td><td>Failure to submit answer script</td><td>Rustication/Expulsion</td></tr>
+                <tr><td>viii</td><td>Oral communication between candidates</td><td>Rustication for one semester</td></tr>
+                <tr><td>ix</td><td>Passing notes or other accessories</td><td>Expulsion</td></tr>
+                <tr><td>x</td><td>Possession of unauthorized material</td><td>Expulsion</td></tr>
+                <tr><td>xi</td><td>Refusal to sit for examination</td><td>Expulsion</td></tr>
+                <tr><td>xii</td><td>Smuggling of prepared answer scripts</td><td>Expulsion</td></tr>
+                <tr><td>xiii</td><td>Use of cell phones or unauthorized books</td><td>Expulsion</td></tr>
+                <tr><td>xiv</td><td>Possession of live Question Paper</td><td>Expulsion</td></tr>
+                <tr><td>xv</td><td>Collusion with another person to write exam</td><td>Expulsion</td></tr>
+                <tr><td>xvi</td><td>Writing exam on behalf of another</td><td>Expulsion</td></tr>
+                <tr><td>xvii</td><td>Assault on Invigilator</td><td>Expulsion</td></tr>
+                <tr><td>xviii</td><td>Absence without due Authority</td><td>To be carried over</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Registration Procedures -->
+      <div class="handbook-card" style="margin-top: 2rem;">
+        <h3><i class="fas fa-pen"></i> Registration Procedures</h3>
+        <ol class="reg-list">
+          <li>Clearance by Admissions Officer and collection of forms.</li>
+          <li>Payment of fees and Bursary clearance.</li>
+          <li>Allocation of hostel (if applicable).</li>
+          <li>Faculty Office clearance.</li>
+          <li>Course registration in consultation with HOD.</li>
+          <li>Submit completed forms to Academic Office.</li>
+          <li>Register at Health Centre.</li>
+        </ol>
+        <p>Late registration attracts a penalty of ₦2,500 per week. No registration after matriculation.</p>
+      </div>
+
+      <div class="quick-nav-mini">
+        <a href="#" id="academicRegLink">Academic Regulations</a>
+        <a href="#" id="courseReqLink">Course Requirements</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Handbook extra (Vision/Mission full) -->
+  <div id="handbookModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeHandbookModal">&times;</span>
+      <div id="handbookModalBody">
+        <h2>Full Philosophy & Mission</h2>
+        <p><strong>University Philosophy:</strong> To provide a first-class academic and research environment where the needs of the society and mankind are paramount. It aims to create an atmosphere of academic freedom, nurture research culture, provide liberal education, build knowledge creators, and foster community service.</p>
+        <p><strong>Departmental Vision (detailed):</strong> To be the leading Department in Research and Teaching towards the economic and developmental growth of the nation through ICT.</p>
+        <p><strong>Departmental Mission (detailed):</strong> Stimulate sustained interest in computer science; train students with necessary computing knowledge and skills; provide solid background for postgraduate studies; conduct research to advance the state of the art.</p>
+        <p><strong>Core Values:</strong> Innovation, Integrity, Excellence, Leadership.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="https://via.placeholder.com/40x40/2c1a4a/ffffff?text=CU" alt="">
+        <span>Chrisland University Computer Science</span>
+      </div>
+      <p>Km 5, Ajebo Road, Abeokuta, Ogun State, Nigeria.</p>
+      <p>© 2025 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

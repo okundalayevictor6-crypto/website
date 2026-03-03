@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrisland CS · Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/cu-logo.png" alt="Chrisland Logo" class="logo-img">
+          <span>Chrisland University</span> 
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="handbook.html">Handbook</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="section-intro">We'd love to hear from you. Reach out with any questions or visit our campus.</p>
+
+      <div class="contact-grid">
+        <!-- Left: Address & Info -->
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <p>Km 5, Ajebo Road, Abeokuta,<br>Ogun State, Nigeria.</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Call Us</h3>
+            <p>+234(0) 813 576 2586<br>+234(0) 802 336 4530</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>info@chrislanduniversity<br>.edu.ng<br>admission@<br>chrislanduniversity.edu.ng</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <h3>Office Hours</h3>
+            <p>Monday – Friday: 9:00 AM – 5:00 PM<br>Saturday: 10:00 AM – 2:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="map-container">
+        <h3>Find Us Here</h3>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.8632316544995!2d3.3966412099140824!3d7.141809915641025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a356dd3b47bd1%3A0x763f92c3df2f5886!2sChrisland%20University%2C%20Abeokuta!5e0!3m2!1sen!2sng!4v1772442667036!5m2!1sen!2sng" width="1250" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="https://via.placeholder.com/40x40/2c1a4a/ffffff?text=CU" alt="">
+        <span>Chrisland University Computer Science</span>
+      </div>
+      <p>Km 5, Ajebo Road, Abeokuta, Ogun State, Nigeria.</p>
+      <p>© 2025 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple form submission simulation
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message. (Demo - no actual email sent)');
+      this.reset();
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
